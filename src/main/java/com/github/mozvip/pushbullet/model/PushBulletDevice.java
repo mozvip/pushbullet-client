@@ -1,4 +1,4 @@
-package fr.mozvip.pushbullet.model;
+package com.github.mozvip.pushbullet.model;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonInclude;

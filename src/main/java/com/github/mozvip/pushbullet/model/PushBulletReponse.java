@@ -1,4 +1,4 @@
-package fr.mozvip.pushbullet.model;
+package com.github.mozvip.pushbullet.model;
 
 import java.util.List;
 

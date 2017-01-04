@@ -1,6 +1,7 @@
-package fr.mozvip.pushbullet;
+package com.github.mozvip.pushbullet;
 
-import fr.mozvip.pushbullet.model.PushBulletReponse;
+import com.github.mozvip.pushbullet.model.PushBulletReponse;
+
 import retrofit2.Call;
 import retrofit2.http.Field;
 import retrofit2.http.FormUrlEncoded;
