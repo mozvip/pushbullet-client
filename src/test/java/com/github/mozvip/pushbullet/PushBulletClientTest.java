@@ -12,7 +12,7 @@ import com.github.mozvip.pushbullet.model.PushBulletDevice;
 
 public class PushBulletClientTest {
 
-	static PushBulletClient client = PushBulletClient.Builder().accessToken("PUT_YOUR_TOKEN_HERE").build();
+	static PushBulletClient client = PushBulletClient.Builder().accessToken( System.getenv("PUSHBULLET_ACCESS_TOKEN")).build();
 	private static String deviceId;
 	
 	@BeforeClass
