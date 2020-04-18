@@ -17,6 +17,7 @@ public class PushBulletReponse {
 	private double modified;
 	
 	private List<PushBulletDevice> devices;
+	private List<Push> pushes;
 
 	public String getIden() {
 		return iden;
@@ -54,7 +55,12 @@ public class PushBulletReponse {
 	public void setDevices(List<PushBulletDevice> devices) {
 		this.devices = devices;
 	}
-	
-	
 
+	public List<Push> getPushes() {
+		return pushes;
+	}
+
+	public void setPushes(List<Push> pushes) {
+		this.pushes = pushes;
+	}
 }

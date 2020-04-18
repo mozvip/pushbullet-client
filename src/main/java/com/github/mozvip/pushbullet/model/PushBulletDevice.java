@@ -121,4 +121,21 @@ public class PushBulletDevice {
 		return getNickname();
 	}
 
+	@Override
+	public String toString() {
+		return "PushBulletDevice{" +
+				"iden='" + iden + '\'' +
+				", push_token='" + push_token + '\'' +
+				", app_version=" + app_version +
+				", fingerprint='" + fingerprint + '\'' +
+				", active=" + active +
+				", nickname='" + nickname + '\'' +
+				", manufacturer='" + manufacturer + '\'' +
+				", type='" + type + '\'' +
+				", created=" + created +
+				", modified=" + modified +
+				", model='" + model + '\'' +
+				", pushable=" + pushable +
+				'}';
+	}
 }

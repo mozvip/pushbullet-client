@@ -1,8 +1,6 @@
 language: java
 jdk:
-  - oraclejdk8
-  - oraclejdk7
-  - openjdk7
+  - openjdk8
 install:
   - mvn --settings .travis/settings.xml install -DskipTests=true -Dgpg.skip -Dmaven.javadoc.skip=true -B -V
 before_install:
@@ -16,7 +14,7 @@ deploy:
     on:
       repo: $TRAVIS_REPO_SLUG
       branch: master
-      jdk: oraclejdk8
+      jdk: openjdk8
   -
     provider: script
     script: mvn --settings .travis/settings.xml org.codehaus.mojo:versions-maven-plugin:2.1:set -DnewVersion=$TRAVIS_TAG 1>/dev/null 2>/dev/null; mvn clean deploy --settings .travis/settings.xml -DskipTests=true -B -U
@@ -24,4 +22,4 @@ deploy:
     on:
       repo: $TRAVIS_REPO_SLUG
       tags: true
-      jdk: oraclejdk8
+      jdk: openjdk8
