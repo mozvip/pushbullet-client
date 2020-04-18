@@ -88,7 +88,7 @@ public class PushBulletClientTest {
 	public void createSubscription() throws IOException {
 		final SubscriptionsResponse subscriptions = client.getSubscriptions();
 		for (SubscriptionResponse subscription : subscriptions.getSubscriptions()) {
-			if (subscription.getChannel().getTag().equals("humblebundle")) {
+			if (subscription.isActive() && subscription.getChannel().getTag().equals("humblebundle")) {
 				client.deleteSubscription(subscription.getIden());
 			}
 		}
